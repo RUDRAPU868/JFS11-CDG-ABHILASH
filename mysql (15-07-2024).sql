@@ -1,0 +1,10 @@
+use codegnan;
+create table customers1 (id int primary key auto_increment, name varchar(100), age int, status  varchar(100));
+insert into customers1 (name, age, status) values ('abhi', 23, 'major'), ('sree', 21, 'major');
+select * from customers1;
+insert into customers1 (name, age) values ('sravani', 22), ('abhi', 23);
+select name, (id+age) as newdata from customers1;
+select name, id, age, (age-id) as newdata from customers1;
+select name, id, age, (id*10) as newdata from customers1;
+select name, id, age, (age/2) as newdata from customers1;
+select name, id, age, (age%2) as newdata from customers1;
